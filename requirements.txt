@@ -1,0 +1,39 @@
+attrs==21.4.0
+brotlipy==0.7.0
+certifi==2022.5.18.1
+cffi @ file:///opt/conda/conda-bld/cffi_1642701102775/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+cryptography @ file:///tmp/build/80754af9/cryptography_1652083456434/work
+filelock==3.7.1
+huggingface-hub==0.8.1
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+importlib-metadata==4.11.4
+joblib==1.1.0
+jsonlines==3.0.0
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626179032232/work
+mkl-service==2.4.0
+numpy @ file:///opt/conda/conda-bld/numpy_and_numpy_base_1653915516269/work
+packaging==21.3
+Pillow==9.0.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing==3.0.9
+PySocks @ file:///tmp/build/80754af9/pysocks_1594394576006/work
+PyYAML==6.0
+regex==2022.6.2
+requests @ file:///opt/conda/conda-bld/requests_1641824580448/work
+scikit-learn==1.0.2
+scipy==1.7.3
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+sklearn==0.0
+threadpoolctl==3.1.0
+tokenizers==0.12.1
+torch==1.11.0
+torchaudio==0.11.0
+torchvision==0.12.0
+tqdm==4.64.0
+transformers==4.20.1
+typing_extensions @ file:///opt/conda/conda-bld/typing_extensions_1647553014482/work
+urllib3 @ file:///opt/conda/conda-bld/urllib3_1650639997961/work
+zipp==3.8.0
