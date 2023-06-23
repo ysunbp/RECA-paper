@@ -2,6 +2,7 @@ import spacy
 import os
 import json
 import numpy as np
+from collections import Counter
 
 nlp = spacy.load('en_core_web_trf')
 table_dir = '../data/json/Round'
@@ -26,6 +27,7 @@ for round in rounds:
             table_content = np.array(load_dict['content'])
             width = len(load_dict['header'])
             col_ne = []
+            most_common = []
             for col_index in range(width):
                 column_string = ''
                 cur_ne = []
@@ -36,7 +38,12 @@ for round in rounds:
                 for ent in doc.ents:
                     cur_ne.append(ent.label_)
                 col_ne.append(cur_ne)
+                if cur_ne:
+                    most_common.append(Counter(cur_ne).most_common(1)[0][0])
+                else:
+                    most_common.append('EMPTY')
             new_dict['table_NE'] = col_ne
+            new_dict['most_common'] = most_common
             with open(out_json_file_path, 'w') as out_f:
                 json.dump(new_dict, out_f)
             print(json_file)
