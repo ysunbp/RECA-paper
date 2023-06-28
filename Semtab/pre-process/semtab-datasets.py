@@ -22,6 +22,11 @@ from tqdm import trange
 from math import sqrt
 
 
+def get_label_dict(path='../experiment/semtab_labels.json'):
+    with open(path, 'r') as label_file:
+        label_dict = json.load(label_file)
+    return label_dict
+
 def setup_seed(seed):
     torch.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
