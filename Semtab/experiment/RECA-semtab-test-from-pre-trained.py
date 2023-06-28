@@ -126,7 +126,7 @@ class TableDataset(Dataset):
         return token_ids, rel_ids, sub_ids, labels
 
 def get_loader(target_cols, rel_cols, sub_rel_cols, labels,batch_size=8,is_train=True):
-    ds_df = TableDataset(target_cols, Tokenizer, rel_cols, sub_rel_cols, labels)
+    ds_df = TableDataset(target_cols, rel_cols, sub_rel_cols, Tokenizer, labels)
     loader = torch.utils.data.DataLoader(ds_df, batch_size=batch_size, shuffle=is_train, num_workers=0, collate_fn=ds_df.collate_fn)
     loader.num = len(ds_df)
     return loader
