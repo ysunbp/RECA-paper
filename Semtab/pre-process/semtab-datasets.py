@@ -62,7 +62,7 @@ def load_file(data_path, label_dict):
 
 
 class TableDataset(Dataset): # Generate tabular dataset
-    def __init__(self, target_cols, tokenizer, rel_cols, sub_rel_cols, labels):
+    def __init__(self, target_cols, rel_cols, sub_rel_cols, tokenizer, labels):
         self.labels = []
         self.data = []
         self.tokenizer = tokenizer
