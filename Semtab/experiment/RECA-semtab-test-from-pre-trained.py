@@ -59,11 +59,7 @@ class TableDataset(Dataset):
         self.rel_cols = rel_cols
         self.sub_rel_cols = sub_rel_cols
 
-    def tokenize(self, col):
-        text = ''
-        for cell in col:
-            text+=cell
-            text+=' '
+    def tokenize(self, text):
         tokenized_text = self.tokenizer.encode_plus(text, add_special_tokens=True, max_length=MAX_LEN, padding = 'max_length', truncation=True)         
         ids = torch.Tensor(tokenized_text["input_ids"]).long()
         return ids
