@@ -52,7 +52,7 @@ def load_jsonl(jsonl_path, label_dict):
     return target_cols, rel_cols, sub_rel_cols, labels
 
 class TableDataset(Dataset):
-    def __init__(self, target_cols, tokenizer, rel_cols, sub_rel_cols, labels):
+    def __init__(self, target_cols, rel_cols, sub_rel_cols, tokenizer, labels):
         self.labels = labels
         self.target_cols = target_cols
         self.tokenizer = tokenizer
