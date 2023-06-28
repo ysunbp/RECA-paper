@@ -53,7 +53,7 @@ def load_json(json_path, label_dict):
 
 
 class TableDataset(Dataset): # Generate tabular dataset
-    def __init__(self, target_cols, tokenizer, rel_cols, sub_rel_cols, labels):
+    def __init__(self, target_cols, rel_cols, sub_rel_cols, tokenizer, labels):
         self.labels = []
         self.target_cols = []
         self.tokenizer = tokenizer
@@ -138,5 +138,5 @@ if __name__ == '__main__':
     for round in rounds:
         json_path = json_path_base+str(round)+'/'
         target_cols, rel_cols, sub_cols, labels = load_json(json_path, label_dict)
-        ds_df = TableDataset(target_cols, Tokenizer, rel_cols, sub_cols, labels)
+        ds_df = TableDataset(target_cols, rel_cols, sub_cols, Tokenizer, labels)
         torch.save(ds_df, '../data/tokenized_data/'+str(MAX_LEN)+'/fold_'+str(round))
