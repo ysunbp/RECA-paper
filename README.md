@@ -1,5 +1,5 @@
 # RECA
-This is the repository for the code and data of the VLDB 2023 paper: [RECA: Related Tables Enhanced Column Semantic Type Annotation Framework](https://dl.acm.org/doi/10.14778/3583140.3583149).
+This is the repository for the code and data of the VLDB 2023 paper: [RECA: Related Tables Enhanced Column Semantic Type Annotation Framework]([https://dl.acm.org/doi/10.14778/3583140.3583149](https://www.researchgate.net/publication/370163850_RECA_Related_Tables_Enhanced_Column_Semantic_Type_Annotation_Framework)).
 
 
 ![Overview of RECA](./imgs/pipeline_updated.drawio.png)
