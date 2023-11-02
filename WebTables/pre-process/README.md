@@ -8,3 +8,6 @@
 
 ## Start from tokenized data
 1. Download the pre-processed tokenized data from this [link](https://drive.google.com/file/d/1wo6QMjUdWsb6-5kczqZMy_89gstw7BfV/view?usp=sharing), unzip, and place in the [tokenized_data](https://github.com/ysunbp/RECA-paper/tree/main/WebTables/data/tokenized_data) folder.
+
+## Special notes
+In case you want to start from the processed JSON files which contain the related tables and sub-related tables information, please download from the following [link](https://drive.google.com/file/d/1PBlSbYwwdQejt2-aGdoFaKMXnyVdTFje/view?usp=drive_link).
