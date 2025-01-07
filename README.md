@@ -75,3 +75,17 @@ RECA/
 └── requirements.txt
 
 ```
+
+## Citations
+```
+@article{sun2023reca,
+  title={Reca: Related tables enhanced column semantic type annotation framework},
+  author={Sun, Yushi and Xin, Hao and Chen, Lei},
+  journal={Proceedings of the VLDB Endowment},
+  volume={16},
+  number={6},
+  pages={1319--1331},
+  year={2023},
+  publisher={VLDB Endowment}
+}
+```
